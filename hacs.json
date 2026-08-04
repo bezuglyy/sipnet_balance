@@ -1,0 +1,7 @@
+{
+  "name": "SIPNET Balance",
+  "content_in_root": false,
+  "domains": ["sipnet_balance"],
+  "homeassistant": "2025.12.0",
+  "render_readme": true
+}

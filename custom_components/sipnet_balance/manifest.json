@@ -1,0 +1,14 @@
+{
+  "domain": "sipnet_balance",
+  "name": "SIPNET Balance",
+  "version": "1.0.5",
+  "documentation": "https://example.com/sipnet_balance",
+  "requirements": [
+    "aiohttp"
+  ],
+  "codeowners": [
+    "@user"
+  ],
+  "iot_class": "cloud_polling",
+  "config_flow": true
+}
