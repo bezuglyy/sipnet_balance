@@ -1,23 +1,31 @@
-# SIPNET Balance для Home Assistant
+# SIPNET Balance
 
-Интеграция получает баланс SIPNET и публикует его как сенсор Home Assistant.
+Кастомная интеграция для [Home Assistant](https://www.home-assistant.io) · версия **1.0.5**.
+
+![icon](custom_components/sipnet_balance/brand/icon.png)
+
+| | |
+|---|---|
+| Домен | `sipnet_balance` |
+| Версия | 1.0.5 |
+| Тип | custom integration |
+
+## Описание
+
+Мониторинг баланса счёта SIPNET.
 
 ## Возможности
 
-- настройка SIP UID и пароля через Config Flow;
-- периодический опрос баланса;
-- ручное обновление через `sipnet_balance.refresh`;
-- диагностическое состояние доступности;
-- локальные иконка и логотип.
+- Сенсоры и мониторинг состояния
 
 ## Установка
 
-Через HACS добавьте `bezuglyy/sipnet_balance` как Integration. Вручную скопируйте `custom_components/sipnet_balance` в `/config/custom_components/` и перезапустите HA.
+1. Скопируйте папку `custom_components/{domain}/` в каталог `custom_components/` конфигурации Home Assistant.
+2. Перезапустите Home Assistant.
+3. Настройки → Устройства и службы → Добавить интеграцию → **{mname}**.
 
-## Архитектура и безопасность
-
-`config_flow.py` создаёт запись, `sensor.py` выполняет запрос баланса, `__init__.py` регистрирует сервис обновления. Пароль сохраняется в Config Entry и не должен публиковаться в issue, логе или README.
+> Установка через HACS: добавьте репозиторий `https://github.com/bezuglyy/{repo}` как Custom repository (категория Integration).
 
 ## Лицензия
 
-MIT.
+MIT
